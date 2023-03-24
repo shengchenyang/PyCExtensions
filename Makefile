@@ -1,6 +1,6 @@
-.PHONY: refresh build install build_dist release lint test clean
+.PHONY: refresh build install build_dist release test clean
 
-refresh: clean build install lint
+refresh: clean build install
 
 ifeq ($(OS),Windows_NT)
     RM = cmd.exe /C del /F /Q
@@ -53,6 +53,6 @@ clean:
 	-$(RMDIR) $(call path,pycextensions.egg-info)
 	-$(RMDIR) $(call path,pycextensions.egg-info)
 	-$(RMDIR) $(call path,src$(PATHSEP)pycextensions.egg-info)
-	-$(RMDIR) $(call path,.coverage)
+	-$(RM) $(call path,.coverage)
 	-$(RMDIR) $(call path,coverage.xml)
 	pip uninstall -y pycextensions

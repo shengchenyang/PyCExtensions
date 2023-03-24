@@ -12,7 +12,7 @@ name: Build and upload to PyPI
 
 on:
   release:
-    types: [created]
+    types: [created, edited, published]
 
 jobs:
   build_wheels:

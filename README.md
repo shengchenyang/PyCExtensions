@@ -14,7 +14,7 @@
 
 本项目就是使用 `setuptools` 来实现 `python c extension` 的示例，并通过 `cibuildwheel`  来进行 `linux`，`windows` 和 `macos` 全平台打包和发包的演示。
 
-据 `2022` 年的统计可知，目前比较流行的 `Python` 包管理工具为 `setuptools`，`poetry` 和 `conda`，当然还有 `flit` 等其它工具。我比较常用 `setuptools` 和 `poetry`，`poetry` 在易用性上比较有优势，其理念也比较符合 `python` 未来的趋势，其使用 `pyprojedct.toml` 文件，以一个文件来统一管理项目的所有信息，从而提高项目的可维护性和可读性。但是很多工具的官方文档中都或多或少不太建议优先在 `pyproject.toml` 中配置，还有在含有 `c extension` 的情况下 `poetry` 和其它第三方包管理器就无法快速且优雅地实现，比如 `poetry` 官方文档现在还没有 `python c extension` 的示例，不过在其 `ISSUES` 中提到会尽快支持。
+据 `2022` 年的统计可知，目前比较流行的 `Python` 包管理工具为 `setuptools`，`poetry` 和 `conda`，当然还有 `flit` 等其它工具。我比较常用 `setuptools` 和 `poetry`，`poetry` 在易用性上比较有优势，其理念也比较符合 `python` 未来的趋势，其使用 `pyproject.toml` 文件，以一个文件来统一管理项目的所有信息，从而提高项目的可维护性和可读性。但是很多工具的官方文档中都或多或少不太建议优先在 `pyproject.toml` 中配置，还有在含有 `c extension` 的情况下 `poetry` 和其它第三方包管理器就无法快速且优雅地实现，比如 `poetry` 官方文档现在还没有 `python c extension` 的示例，不过在其 `ISSUES` 中提到会尽快支持。
 
 所以，本项目就以 `setuptools` 来实现标准的包管理的一个示例。
 
