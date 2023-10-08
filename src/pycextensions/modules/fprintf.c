@@ -14,7 +14,7 @@ static PyObject *method_fprintf(PyObject *self, PyObject *args) {
     /* Get length of input string */
     Py_ssize_t str_len = PyUnicode_GET_LENGTH((PyObject*)str);
 
-    if (str_len <= 0) {
+    if (str_len < 0) {
         /* Passing custom exception */
         PyErr_SetString(StringTooShortError, "String param must be exists");
         return NULL;
