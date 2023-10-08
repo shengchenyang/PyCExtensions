@@ -2,13 +2,13 @@
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/shengchenyang/PyCExtensions/python-package.yml)
 ![GitHub](https://img.shields.io/github/license/shengchenyang/PyCExtensions)
-![python version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-brightgreen)
+![python version](https://img.shields.io/badge/python-3.8_%7C_3.9_%7C_3.10_%7C_3.11_%7C_3.12-brightgreen)
 ![codecov](https://codecov.io/gh/shengchenyang/PyCExtensions/branch/main/graph/badge.svg?token=95d2381c-c4fa-4503-9116-b720e91b9a1f)
 
 > 用于介绍一个 `python C extension` 的示例，用于熟悉其中流程，并了解其与 `poetry c extension` 中的区别和各自优势。
 >
 
-## 项目介绍
+## 前言
 
 **编写日期：** *2023/03/23*
 
@@ -21,6 +21,12 @@
 ## 前提准备
 
 `windows`，`linux` 或 `macos` 上配置 `make` 工具。
+
+## 项目说明
+
+本项目就是一个使用 `setuptools` 实现的 `Python C Extensions` 的示例，调用了 `c` 中的 `fprintf` 方法：将格式化的数据输出到指定的文件中。具体如何使用此库，在测试文件中已经列举了详细的使用方法。可以通过 `make test` 测试，或者手动安装本库后运行示例中的方法。
+
+也用于介绍项目工程化的一个简单示例，一些 `github workflow`，代码检测，格式化和测试覆盖率等工具的使用。
 
 ## 运行说明
 
